@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBToDo</title>
+<script defer src="main.js"></script></head>
+
+<body>
+    <div id="newTaskModal" class="modal-hide">
+        <div class="modal">
+            <form id="taskForm">
+                <label for="taskTitle">Title</label>
+                <input type="text" id="taskTitle">
+                <label for="taskDescription">Description</label>
+                <textarea name="description" id="taskDescription"></textarea>
+                <label for="dueDate">Due Date</label>
+                <input type="date" name="dueDate" id="dueDate">
+                <label for="priority">Priority</label>
+                <select name="priority" id="priority">
+                    <option value="high">High</option>
+                    <option value="standard" selected>Standard</option>
+                    <option value="low">Low</option>
+                </select>
+                <div class="formBtns">
+                    <button type="button" id="cancelTaskBtn">Cancel</button>
+                    <button type="button" id="createTaskBtn">Create Task</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="newProjectModal" class="modal-hide">
+        <div class="modal">
+            <form id="projectForm">
+                <label for="projectName">Project Name</label>
+                <input type="text" id="projectName">
+                <div class="formBtns">
+                    <button type="button" id="cancelProjectBtn">Cancel</button>
+                    <button type="button" id="createProjectBtn">Create Project</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="topBar">
+        <h1>BBtoDo<p>as simple as possible</p></h1>
+    </div>
+    <div id="content">
+        <div id="menu">
+            <h2>Projects</h2>
+            <div id="createBtns">
+                <button type="button" id="newProjectBtn">New Project</button>
+                <button type="button" id="newTaskBtn">New Task</button>
+            </div>
+            <div id="projectsListDiv"></div>
+        </div>
+        <div id="tasksSection">
+            <h2>Tasks</h2>
+            <div id="tasksListDiv">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
