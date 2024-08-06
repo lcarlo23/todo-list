@@ -7,9 +7,5 @@
 import 'normalize.css';
 import './style.css';
 import { initializeEvents } from './modules/eventHandlers';
-import { deleteProject, Project, projectList } from './modules/projectManager';
 
 window.addEventListener('DOMContentLoaded', initializeEvents);
-
-window.deleteProject = deleteProject;
-window.projectList = projectList;

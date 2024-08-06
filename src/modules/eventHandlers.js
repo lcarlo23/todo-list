@@ -30,7 +30,7 @@ import {
     getLocalProjectId,
     getLocalActiveProject,
 } from './projectManager';
-import { newTask, getLocalTaskId } from './taskManager';
+import { getLocalTaskId } from './taskManager';
 
 // FUNCTIONS
 

@@ -264,10 +264,6 @@ function createTaskModal(e) {
     };
 };
 
-function closeTaskModal(e) {
-
-};
-
 // EXPORT
 
 export {
@@ -283,6 +279,5 @@ export {
     removeProject,
     removeTask,
     createDefaultTemplate,
-    createTaskModal,
-    closeTaskModal
+    createTaskModal
 };
